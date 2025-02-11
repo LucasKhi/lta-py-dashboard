@@ -14,10 +14,10 @@ Dashboard interativo para análise de desempenho dos times do LTA SUL, desenvolv
 ## Instalação
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/cblol-dashboard
+git clone [https://github.com/seu-usuario/cblol-dashboard](https://github.com/LucasKhi/lta-py-dashboard)
 
 # Entre no diretório
-cd cblol-dashboard
+cd lta-py-dashboard
 
 # Crie um ambiente virtual
 python -m venv venv
