@@ -1,15 +1,19 @@
 /* Estilos gerais */
 body {
-    background-color: #1a1a1a;
+    background-color: #121212;
     color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /* Estilo do cabeçalho */
 .dashboard-header {
     background: linear-gradient(to right, #1a1a1a, #2c2c2c);
-    padding: 1rem;
-    border-bottom: 2px solid #3498db;
+    padding: 1.5rem;
+    border-bottom: 2px solid #EF5124;
     margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .logo-container {
@@ -22,48 +26,96 @@ body {
 .logo-container img {
     max-height: 80px;
     margin-right: 1rem;
+    filter: drop-shadow(0 0 10px rgba(239, 81, 36, 0.5));
+}
+
+.logo-container h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #EF5124;
+    text-shadow: 0 0 10px rgba(239, 81, 36, 0.5);
 }
 
 /* Estilo dos cards */
 .dashboard-card {
-    background-color: #2c2c2c;
-    border: 1px solid #EF5124;
-    border-radius: 10px;
+    background-color: rgba(44, 44, 44, 0.8);
+    border: 1px solid rgba(239, 81, 36, 0.3);
+    border-radius: 12px;
     margin-bottom: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* backdrop-filter: blur(10px); */
 }
 
 .dashboard-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(239, 81, 36, 0.3);
 }
 
 .card-header {
-    background-color: #EF5124;
+    background-color: rgba(239, 81, 36, 0.9);
     color: white;
-    border-top-left-radius: 10px !important;
-    border-top-right-radius: 10px !important;
+    border-top-left-radius: 12px !important;
+    border-top-right-radius: 12px !important;
     font-weight: bold;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.card-body {
+    padding: 1.5rem;
 }
 
 /* Estilo dos dropdowns */
 .Select-control {
-    background-color: #2c2c2c !important;
-    border-color: #3498db !important;
+    background-color: rgba(44, 44, 44, 0.8) !important;
+    border: 1px solid rgba(239, 81, 36, 0.3) !important;
+    border-radius: 8px !important;
+    color: white !important;
 }
 
 .Select-menu-outer {
-    background-color: #2c2c2c !important;
-    border-color: #3498db !important;
+    background-color: rgba(44, 44, 44, 0.9) !important;
+    border: 1px solid rgba(239, 81, 36, 0.3) !important;
+    border-radius: 8px !important;
 }
 
 .Select-value-label {
     color: white !important;
 }
 
+.Select-option {
+    color: white !important;
+    background-color: rgba(44, 44, 44, 0.9) !important;
+}
+
+.Select-option.is-focused {
+    background-color: rgba(239, 81, 36, 0.5) !important;
+}
+
 /* Estilo dos gráficos */
 .js-plotly-plot {
     background-color: transparent !important;
+}
+
+/* Estilo da tabela */
+.dash-table-container {
+    background-color: rgba(44, 44, 44, 0.8) !important;
+    border-radius: 12px !important;
+    border: 1px solid rgba(239, 81, 36, 0.3) !important;
+    overflow: hidden;
+}
+
+.dash-table-container .dash-header {
+    background-color: rgba(239, 81, 36, 0.9) !important;
+    color: white !important;
+    font-weight: bold;
+}
+
+.dash-table-container .dash-cell {
+    background-color: rgba(44, 44, 44, 0.8) !important;
+    color: white !important;
+    border-bottom: 1px solid rgba(239, 81, 36, 0.3) !important;
 }
 
 /* Responsividade */
@@ -74,5 +126,9 @@ body {
     
     .logo-container img {
         max-height: 60px;
+    }
+
+    .logo-container h1 {
+        font-size: 1.5rem;
     }
 }

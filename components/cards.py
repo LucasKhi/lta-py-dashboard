@@ -49,29 +49,39 @@ def create_cards():
                 dbc.Card([
                     dbc.CardHeader("Métricas por Semana"),
                     dbc.CardBody([
-                        dash_table.DataTable(
-                            id='metrics-table',
-                            columns=[
-                                {'name': 'Semana', 'id': 'Semana'},
-                                {'name': 'Melhor Time', 'id': 'Melhor Time'},
-                                {'name': 'Jogador com Maior Melhoria', 'id': 'Jogador com Maior Melhoria'},
-                                {'name': 'Time que Mais Evoluiu', 'id': 'Time que Mais Evoluiu'}
-                            ],
-                            style_table={'overflowX': 'auto'},
-                            style_cell={
-                                'textAlign': 'left',
-                                'padding': '10px'
-                            },
-                            style_header={
-                                'backgroundColor': '#333333',
-                                'color': '#ffffff',
-                                'fontWeight': 'bold'
-                            },
-                            style_data={
-                                'backgroundColor': '#1e1e1e',
-                                'color': '#ffffff'
-                            }
-                        )
+                    dash_table.DataTable(
+                        id='metrics-table',
+                        columns=[
+                            {'name': 'Semana', 'id': 'Semana'},
+                            {'name': 'Melhor Time', 'id': 'Melhor Time'},
+                            {'name': 'Pior Time', 'id': 'Pior Time'},
+                            {'name': 'Jogador com Maior Melhoria', 'id': 'Jogador com Maior Melhoria'},
+                            {'name': 'Jogador com Pior Desempenho', 'id': 'Jogador com Pior Desempenho'},
+                            {'name': 'Time que Mais Evoluiu', 'id': 'Time que Mais Evoluiu'},
+                            {'name': 'Time com Maior Queda', 'id': 'Time com Maior Queda'},
+                            {'name': 'Jogador Mais Consistente', 'id': 'Jogador Mais Consistente'},
+                            {'name': 'Time Mais Consistente', 'id': 'Time Mais Consistente'},
+                            {'name': 'Maior Queda de Desempenho', 'id': 'Maior Queda de Desempenho'},
+                            {'name': 'Melhores Jogadores por Lane', 'id': 'Melhores Jogadores por Lane'},
+                            {'name': 'Melhor Jogador Geral', 'id': 'Melhor Jogador Geral'},
+                            {'name': 'Time com Melhor Rendimento por Nacionalidade', 'id': 'Time com Melhor Rendimento por Nacionalidade'},
+                            {'name': 'Evolução de Tiers', 'id': 'Evolução de Tiers'}
+                        ],
+                        style_table={'overflowX': 'auto'},
+                        style_cell={
+                            'textAlign': 'left',
+                            'padding': '10px'
+                        },
+                        style_header={
+                            'backgroundColor': '#333333',
+                            'color': '#ffffff',
+                            'fontWeight': 'bold'
+                        },
+                        style_data={
+                            'backgroundColor': '#1e1e1e',
+                            'color': '#ffffff'
+                        }
+                    )
                     ])
                 ], className="dashboard-card")
             ])

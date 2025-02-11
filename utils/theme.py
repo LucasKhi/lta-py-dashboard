@@ -2,8 +2,22 @@ GRAPH_THEME = {
     'paper_bgcolor': 'rgba(0,0,0,0)',
     'plot_bgcolor': 'rgba(0,0,0,0)',
     'font': {'color': '#ffffff'},
-    'xaxis': {'gridcolor': '#333333', 'zerolinecolor': '#333333'},
-    'yaxis': {'gridcolor': '#333333', 'zerolinecolor': '#333333'}
+    'xaxis': {
+        'gridcolor': '#333333',
+        'zerolinecolor': '#333333',
+        'title_font': {'color': '#ffffff'}
+    },
+    'yaxis': {
+        'gridcolor': '#333333',
+        'zerolinecolor': '#333333',
+        'title_font': {'color': '#ffffff'}
+    },
+    'legend': {
+        'font': {'color': '#ffffff'},
+        'bgcolor': 'rgba(0,0,0,0.5)',
+        'bordercolor': '#EF5124',
+        'borderwidth': 1
+    }
 }
 
 TEAM_COLORS = {
