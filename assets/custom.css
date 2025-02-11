@@ -1,0 +1,78 @@
+/* Estilos gerais */
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* Estilo do cabeçalho */
+.dashboard-header {
+    background: linear-gradient(to right, #1a1a1a, #2c2c2c);
+    padding: 1rem;
+    border-bottom: 2px solid #3498db;
+    margin-bottom: 2rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.logo-container img {
+    max-height: 80px;
+    margin-right: 1rem;
+}
+
+/* Estilo dos cards */
+.dashboard-card {
+    background-color: #2c2c2c;
+    border: 1px solid #EF5124;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    background-color: #EF5124;
+    color: white;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    font-weight: bold;
+}
+
+/* Estilo dos dropdowns */
+.Select-control {
+    background-color: #2c2c2c !important;
+    border-color: #3498db !important;
+}
+
+.Select-menu-outer {
+    background-color: #2c2c2c !important;
+    border-color: #3498db !important;
+}
+
+.Select-value-label {
+    color: white !important;
+}
+
+/* Estilo dos gráficos */
+.js-plotly-plot {
+    background-color: transparent !important;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .dashboard-card {
+        margin-bottom: 1rem;
+    }
+    
+    .logo-container img {
+        max-height: 60px;
+    }
+}
